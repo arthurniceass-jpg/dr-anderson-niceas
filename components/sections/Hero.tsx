@@ -13,7 +13,7 @@ export function Hero() {
       ref={ref as React.RefObject<HTMLElement>}
       className="relative overflow-hidden bg-gradient-to-br from-[#FAFAFA] via-white to-[#F5F0EB] pt-28 pb-12 sm:pt-36 sm:pb-20"
     >
-      <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-8 px-4 sm:px-8 lg:flex-row lg:gap-12">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 sm:px-8 lg:flex-row lg:gap-12">
         <div
           className={cn(
             "flex flex-1 flex-col items-center text-center lg:items-start lg:text-left opacity-0",
@@ -21,11 +21,11 @@ export function Hero() {
           )}
         >
           <span className="section-tag mb-4">
-            Cirurgiao-Dentista | Clinica Geral
+            Cirurgião-Dentista | Clínica Geral
           </span>
 
           <h1 className="font-heading text-3xl font-bold leading-tight text-[#2D2D2D] sm:text-4xl lg:text-5xl">
-            Mais do que um consultorio,{" "}
+            Mais do que um consultório,{" "}
             <br className="hidden sm:inline" />
             um compromisso com o seu{" "}
             <span className="text-[#C5A47E]">sorriso</span>.
@@ -33,7 +33,7 @@ export function Hero() {
 
           <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
             Atendimento humanizado, tecnologia de ponta e um ambiente pensado
-            para o seu conforto. Cuide da sua saude bucal com quem entende do
+            para o seu conforto. Cuide da sua saúde bucal com quem entende do
             assunto.
           </p>
 
@@ -62,7 +62,7 @@ export function Hero() {
           )}
           style={{ animationDelay: "0.2s" }}
         >
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl shadow-xl lg:max-w-md">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[280px] overflow-hidden rounded-2xl shadow-xl sm:max-w-sm lg:max-w-md">
             <Image
               src="/dr-anderson.jpg"
               alt="Dr. Anderson Niceas"
