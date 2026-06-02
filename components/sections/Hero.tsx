@@ -55,19 +55,14 @@ export function Hero() {
           </div>
         </div>
 
-        <div
-          className={cn(
-            "relative flex-1 opacity-0",
-            inView && "animate-fade-in-up opacity-100"
-          )}
-          style={{ animationDelay: "0.2s" }}
-        >
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-[280px] overflow-hidden rounded-2xl shadow-xl sm:max-w-sm lg:max-w-md">
+        <div className="relative flex-1">
+          <div className="mx-auto w-full max-w-[280px] overflow-hidden rounded-2xl shadow-xl sm:max-w-sm lg:max-w-md">
             <Image
               src="/dr-anderson.jpg"
-              alt="Dr. Anderson Niceas"
-              fill
-              className="object-cover"
+              alt="Dr. Anderson Nicéas"
+              width={800}
+              height={1000}
+              className="h-auto w-full"
               priority
             />
           </div>
