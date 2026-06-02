@@ -1,5 +1,6 @@
 "use client";
 
+import { Camera, MessageCircle, Phone } from "lucide-react";
 import { whatsappLink } from "@/lib/whatsapp";
 import { useInView } from "@/lib/useInView";
 import { cn } from "@/lib/utils";
@@ -34,6 +35,26 @@ export function CTA() {
         >
           Agendar Avaliação
         </a>
+
+        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
+          <a
+            href={`tel:+${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+            className="flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
+          >
+            <Phone className="h-4 w-4 text-[#C5A47E]" />
+            {process.env.NEXT_PUBLIC_PHONE_DISPLAY}
+          </a>
+          <a
+            href={process.env.NEXT_PUBLIC_INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
+          >
+            <Camera className="h-4 w-4 text-[#C5A47E]" />
+            @dr.andersonniceas
+          </a>
+        </div>
+
         <p className="mt-6 text-xs text-gray-500">CRO/PE 22320</p>
       </div>
     </section>
